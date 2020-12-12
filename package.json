@@ -1,0 +1,25 @@
+{
+  "name": "auto-close-issue-by-date",
+  "version": "1.0.0",
+  "description": "This action closes issues created after the given date.\r ## Inputs\r ### Required",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifsc-lased/auto-close-issue-by-date.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifsc-lased/auto-close-issue-by-date/issues"
+  },
+  "homepage": "https://github.com/ifsc-lased/auto-close-issue-by-date#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {}
+}

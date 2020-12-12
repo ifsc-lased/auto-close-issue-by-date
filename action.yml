@@ -1,0 +1,25 @@
+name: "Auto close issues after a expiration date"
+description: "Automatically close issues that were created after the expiration date"
+author: "LaSED - IFSC-SJ - http://www.lased.ifsc.edu.br/"
+
+branding:
+  icon: "sunset"
+  color: "green"
+
+inputs:
+  github-token:
+    description: The `GITHUB_TOKEN` secret.
+    required: true
+  closed-issues-comment:
+    description: Comment to add at the issue before closing it.
+    required: true    
+  expiration-date:
+    description: Final date (yyyy-mm-dd) to creat issues.
+    required: true    
+  closed-issues-label:
+    description: The label to assign to the issue before closing it.
+    required: false    
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
